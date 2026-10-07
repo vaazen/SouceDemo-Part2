@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ошибки проверок (Assertion)",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*"
+  },
+  {
+    "name": "Элемент не найден",
+    "matchedStatuses": ["broken", "failed"],
+    "traceRegex": ".*NoSuchElementException.*"
+  },
+  {
+    "name": "Таймаут ожидания",
+    "matchedStatuses": ["broken", "failed"],
+    "traceRegex": ".*TimeoutException.*"
+  },
+  {
+    "name": "Элемент перекрыт/не кликабелен",
+    "matchedStatuses": ["broken", "failed"],
+    "traceRegex": ".*ElementClickInterceptedException.*"
+  },
+  {
+    "name": "Инфраструктурные сбои",
+    "matchedStatuses": ["broken"]
+  }
+]

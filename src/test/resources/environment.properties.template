@@ -1,0 +1,13 @@
+# Скопируй этот файл в target/allure-results/environment.properties
+# ПОСЛЕ прогона mvn test и ПЕРЕД mvn allure:report / allure:serve —
+# surefire не копирует его туда автоматически, это нужно делать руками
+# (или строчкой в CI-скрипте — см. README).
+#
+# Подставь свои реальные значения перед копированием.
+
+os.name=Windows 11
+jdk.version=17.0.10
+selenium=4.22.0
+testng=7.10.2
+browser=Chrome 127; Firefox 128; Edge 126
+driver.manager=Selenium Manager
